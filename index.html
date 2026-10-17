@@ -1130,9 +1130,9 @@ function imgTag(src, alt, cls = '') {
 }
 
 function imgFail(el) {
-  if (!el || el.dataset.failed === 'true') return;
+  if (!el || el.dataset.failed === '') return;
 
-  el.dataset.failed = 'true';
+  el.dataset.failed = '';
 
   console.warn('تعذر تحميل الصورة. تحقق من مسارها:', el.getAttribute('src'));
 
@@ -1262,7 +1262,7 @@ function renderExhibitions() {
         </div>
 
         <div class="exhibition-info">
-          <div class="exhibition-date">📅 ${ex.date}</div>
+          <div class="exhibition-date"></div>
 
           <h3 class="art-title" style="font-size:1.6rem;margin-bottom:.8rem">
             ${ex.title}
