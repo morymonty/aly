@@ -557,28 +557,52 @@ header {
 /* المستطيلات المحيطة بالنصوص (تظهر في صفحة "عن ظل الشجرة" فقط)
    العرض الأقصى 640px */
 
+
+/* المستطيل الذهبي حول نص الرواية */
 .box {
-  width: 100%;
-  max-width: 640px;
+  width: fit-content;
+  max-width: 760px;
   margin: 2rem auto;
-  padding: 1.8rem 2rem;
-  border: 2px solid var(--accent-gold);
-  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  border: 1.5px solid var(--accent-gold);
+  border-radius: 6px;
   background: var(--bg-secondary);
-  color: var(--text-light);
+  color: var(--accent-gold-light);
   text-align: justify;
-  line-height: 2.1;
-  box-shadow: 0 0 25px rgba(212,175,55,.12);
-  position: relative;
+  line-height: 2;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.08);
 }
 
-.box::before {
-  content: '';
-  position: absolute;
-  inset: 7px;
-  border: 1px solid rgba(212,175,55,.18);
-  border-radius: 4px;
-  pointer-events: none;
+/* عنوان المستطيل */
+.box .section-title {
+  color: var(--accent-gold);
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+/* الكتابة داخل المستطيل */
+.box p {
+  color: var(--accent-gold-light);
+  font-family: var(--font-title);
+  font-size: 1.25rem;
+  line-height: 2;
+  text-align: justify;
+}
+
+/* ضبط الحجم على الهاتف */
+@media (max-width: 600px) {
+  .box {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    margin: 1.5rem auto;
+  }
+
+  .box p {
+    font-size: 1.1rem;
+  }
+}
+
 }
 
 .box p {
