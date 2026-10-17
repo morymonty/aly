@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -27,15 +26,9 @@
   --font-body: 'Tajawal', sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   background: var(--bg-primary);
@@ -45,13 +38,8 @@ body {
   line-height: 1.7;
 }
 
-button, input, textarea {
-  font: inherit;
-}
-
-button {
-  cursor: pointer;
-}
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
 
 h1, h2, h3, h4, .art-title {
   font-family: var(--font-title);
@@ -110,9 +98,7 @@ header {
   flex-shrink: 0;
 }
 
-.logo-mark span {
-  transform: rotate(-45deg);
-}
+.logo-mark span { transform: rotate(-45deg); }
 
 .nav-links {
   display: flex;
@@ -131,9 +117,7 @@ header {
 }
 
 .nav-link:hover,
-.nav-link.active {
-  color: var(--accent-gold);
-}
+.nav-link.active { color: var(--accent-gold); }
 
 .nav-link::after {
   content: '';
@@ -147,9 +131,7 @@ header {
 }
 
 .nav-link:hover::after,
-.nav-link.active::after {
-  width: 100%;
-}
+.nav-link.active::after { width: 100%; }
 
 .header-actions {
   display: flex;
@@ -192,14 +174,8 @@ header {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: none; }
 }
 
 /* الصفحة الرئيسية */
@@ -282,9 +258,7 @@ header {
   margin-bottom: .8rem;
 }
 
-.section-subtitle {
-  color: var(--text-muted);
-}
+.section-subtitle { color: var(--text-muted); }
 
 /* شريط الشخصيات */
 
@@ -327,17 +301,11 @@ header {
   padding: 3rem;
   background: linear-gradient(to top, rgba(0,0,0,.95), transparent);
   width: 100%;
+  direction: rtl;
 }
 
-.slide-title {
-  font-size: 2rem;
-  margin-bottom: .5rem;
-}
-
-.slide-artist {
-  color: var(--accent-gold);
-  margin-bottom: 1rem;
-}
+.slide-title { font-size: 2rem; margin-bottom: .5rem; }
+.slide-artist { color: var(--accent-gold); margin-bottom: 1rem; }
 
 .slider-btn {
   position: absolute;
@@ -354,18 +322,9 @@ header {
   transition: var(--transition-smooth);
 }
 
-.slider-btn:hover {
-  background: var(--accent-gold);
-  color: #000;
-}
-
-.slider-btn.prev {
-  right: 20px;
-}
-
-.slider-btn.next {
-  left: 20px;
-}
+.slider-btn:hover { background: var(--accent-gold); color: #000; }
+.slider-btn.prev { right: 20px; }
+.slider-btn.next { left: 20px; }
 
 /* معالجة الصور غير المتاحة */
 
@@ -384,10 +343,7 @@ header {
   padding: 1rem;
 }
 
-.slide .img-fallback {
-  position: absolute;
-  inset: 0;
-}
+.slide .img-fallback { position: absolute; inset: 0; }
 
 /* معرض الشخصيات */
 
@@ -453,9 +409,7 @@ header {
   transition: transform .8s ease;
 }
 
-.art-card:hover .art-img-wrap img {
-  transform: scale(1.08);
-}
+.art-card:hover .art-img-wrap img { transform: scale(1.08); }
 
 .art-overlay {
   position: absolute;
@@ -470,18 +424,10 @@ header {
 }
 
 .art-card:hover .art-overlay,
-.art-card:focus-within .art-overlay {
-  opacity: 1;
-}
+.art-card:focus-within .art-overlay { opacity: 1; }
 
-.art-details {
-  padding: 1.5rem;
-}
-
-.art-title {
-  font-size: 1.4rem;
-  margin-bottom: .3rem;
-}
+.art-details { padding: 1.5rem; }
+.art-title { font-size: 1.4rem; margin-bottom: .3rem; }
 
 .art-meta {
   display: flex;
@@ -493,10 +439,7 @@ header {
   padding-top: .8rem;
 }
 
-.art-price {
-  color: var(--accent-gold);
-  font-weight: 700;
-}
+.art-price { color: var(--accent-gold); font-weight: 700; }
 
 /* النافذة المنبثقة */
 
@@ -513,9 +456,7 @@ header {
   overflow-y: auto;
 }
 
-.modal.active {
-  display: flex;
-}
+.modal.active { display: flex; }
 
 .modal-content {
   background: var(--bg-secondary);
@@ -530,10 +471,7 @@ header {
   margin: auto;
 }
 
-.modal-img-box {
-  min-height: 400px;
-  background: var(--bg-tertiary);
-}
+.modal-img-box { min-height: 400px; background: var(--bg-tertiary); }
 
 .modal-img-box img {
   display: block;
@@ -581,10 +519,7 @@ header {
   overflow: hidden;
 }
 
-.exhibition-img-box {
-  min-height: 260px;
-  background: var(--bg-tertiary);
-}
+.exhibition-img-box { min-height: 260px; background: var(--bg-tertiary); }
 
 .exhibition-img-box img {
   display: block;
@@ -601,13 +536,9 @@ header {
   justify-content: center;
 }
 
-.exhibition-date {
-  color: var(--accent-gold);
-  font-size: .9rem;
-  margin-bottom: .5rem;
-}
+.exhibition-date { color: var(--accent-gold); font-size: .9rem; margin-bottom: .5rem; }
 
-/* صفحة عن الرواية والمستطيل */
+/* صفحة عن الرواية */
 
 .about-container {
   max-width: 950px;
@@ -623,17 +554,20 @@ header {
   font-size: 1.1rem;
 }
 
-/* هذا هو المستطيل المحيط بالنص */
+/* المستطيلات المحيطة بالنصوص (تظهر في صفحة "عن ظل الشجرة" فقط)
+   العرض الأقصى 640px */
 
 .box {
-  margin: 3rem auto;
-  padding: 2.5rem;
+  width: 100%;
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 1.8rem 2rem;
   border: 2px solid var(--accent-gold);
   border-radius: 8px;
   background: var(--bg-secondary);
   color: var(--text-light);
   text-align: justify;
-  line-height: 2.2;
+  line-height: 2.1;
   box-shadow: 0 0 25px rgba(212,175,55,.12);
   position: relative;
 }
@@ -647,17 +581,13 @@ header {
   pointer-events: none;
 }
 
-.box .section-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
 .box p {
   position: relative;
   font-family: var(--font-title);
-  font-size: 1.4rem;
+  font-size: 1.25rem;
 }
+
+.box p + p { margin-top: 1rem; }
 
 /* التواصل */
 
@@ -670,22 +600,9 @@ header {
   gap: 4rem;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-}
-
-.form-group label {
-  color: var(--text-muted);
-  font-size: .9rem;
-}
+.contact-form { display: flex; flex-direction: column; gap: 1.5rem; }
+.form-group { display: flex; flex-direction: column; gap: .5rem; }
+.form-group label { color: var(--text-muted); font-size: .9rem; }
 
 .form-control {
   width: 100%;
@@ -697,15 +614,8 @@ header {
   font-family: inherit;
 }
 
-.form-control:focus {
-  outline: none;
-  border-color: var(--accent-gold);
-}
-
-textarea.form-control {
-  resize: vertical;
-  min-height: 120px;
-}
+.form-control:focus { outline: none; border-color: var(--accent-gold); }
+textarea.form-control { resize: vertical; min-height: 120px; }
 
 /* التذييل */
 
@@ -720,11 +630,7 @@ footer {
   z-index: 1;
 }
 
-.footer-logo {
-  font-size: 1.5rem;
-  color: var(--accent-gold);
-  margin-bottom: 1rem;
-}
+.footer-logo { font-size: 1.5rem; color: var(--accent-gold); margin-bottom: 1rem; }
 
 /* قائمة المفضلة */
 
@@ -745,9 +651,7 @@ footer {
   overflow-y: auto;
 }
 
-.drawer.active {
-  transform: translateX(0);
-}
+.drawer.active { transform: translateX(0); }
 
 .drawer-header {
   display: flex;
@@ -780,132 +684,47 @@ footer {
 /* الشاشات الصغيرة */
 
 @media (max-width: 1100px) {
-  .nav-links {
-    gap: .9rem;
-  }
-
-  .nav-link {
-    font-size: .85rem;
-  }
-
-  .logo {
-    font-size: 1.3rem;
-  }
+  .nav-links { gap: .9rem; }
+  .nav-link { font-size: .85rem; }
+  .logo { font-size: 1.3rem; }
 }
 
 @media (max-width: 900px) {
-  header {
-    padding: .8rem 4%;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-  }
+  header { padding: .8rem 4%; }
+  .nav-links { display: none; }
+  .hero-title { font-size: 2.5rem; }
+  .hero-subtitle { font-size: 1rem; }
 
   .modal-content,
   .exhibition-card,
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
+  .contact-container { grid-template-columns: 1fr; }
 
   .modal-img-box,
-  .modal-img-box img {
-    min-height: 260px;
-    max-height: 350px;
-  }
+  .modal-img-box img { min-height: 260px; max-height: 350px; }
 
-  .exhibition-img-box img {
-    max-height: 350px;
-  }
-
-  .drawer {
-    width: 100%;
-  }
-
-  .slide {
-    height: 430px;
-  }
-
-  .slide-info {
-    padding: 2rem;
-  }
+  .exhibition-img-box img { max-height: 350px; }
+  .drawer { width: 100%; }
+  .slide { height: 430px; }
+  .slide-info { padding: 2rem; }
 }
 
 @media (max-width: 600px) {
-  .page {
-    padding-top: 85px;
-  }
-
-  .hero {
-    min-height: calc(100vh - 85px);
-    padding: 2rem 1rem;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: .95rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .art-img-wrap {
-    height: 340px;
-  }
-
-  .slide {
-    height: 380px;
-  }
-
-  .slide-title {
-    font-size: 1.6rem;
-  }
-
-  .slide-info {
-    padding: 1.5rem;
-  }
-
-  .box {
-    padding: 1.5rem;
-    margin: 2rem auto;
-  }
-
-  .box p {
-    font-size: 1.15rem;
-  }
-
-  .modal {
-    padding: .7rem;
-  }
-
-  .modal-body {
-    padding: 1.5rem;
-  }
-
-  .exhibition-info {
-    padding: 1.3rem;
-  }
-
-  .contact-container {
-    gap: 2rem;
-  }
+  .page { padding-top: 85px; }
+  .hero { min-height: calc(100vh - 85px); padding: 2rem 1rem; }
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: .95rem; }
+  .section-title { font-size: 2rem; }
+  .gallery-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .art-img-wrap { height: 340px; }
+  .slide { height: 380px; }
+  .slide-title { font-size: 1.6rem; }
+  .slide-info { padding: 1.5rem; }
+  .box { padding: 1.3rem 1.2rem; margin: 1.5rem auto; }
+  .box p { font-size: 1.1rem; }
+  .modal { padding: .7rem; }
+  .modal-body { padding: 1.5rem; }
+  .exhibition-info { padding: 1.3rem; }
+  .contact-container { gap: 2rem; }
 }
 </style>
 </head>
@@ -998,7 +817,7 @@ footer {
   <div class="exhibitions-list" id="exhibitionsList"></div>
 </section>
 
-<!-- عن الرواية -->
+<!-- عن الرواية (الفقرات تظهر هنا فقط) -->
 
 <section id="page-about" class="page">
   <div class="section-header">
@@ -1023,47 +842,51 @@ footer {
     </p>
 
     <div class="box">
-      <h2 class="section-title"> حين تطأ عيناك السطور الأولى في هذه الرواية، لستَ مجرّد 
+      <p>
+        حين تطأ عيناك السطور الأولى في هذه الرواية، لستَ مجرّد
         يعبر حكايةً عابرة، بل أنت غريبٌ يَلِجُ عتبات حياةٍ لم تحسب يومًا
         أنك ستعبر ممراتها... ويقين القول أن خلف ظلال الكلمات واقعًا
         نابضًا؛ فمعظم هذه الأحداث قد جُبلت من طين الحقيقة، وما كانت
-        يومًا محض أوهامٍ أو ضربًا من خيال.</h2>
-  
+        يومًا محض أوهامٍ أو ضربًا من خيال.
+      </p>
     </div>
-  </div>
-</section>
-  
-  <div class="box">
-      <h2 class="section-title"> ماذا لو كانت هناك حياة أخرى تنتظرك في ظلّ شجرة؟
 
-لم يكن خالد يعلم أن بذرةً خضراء صغيرة ستقوده إلى عالمٍ موازٍ، حيث يصبح الماضي حاضرًا، وتتخذ الحياة شكلًا لم يكن يومًا من اختياراته.
-
-بين عالمين، وحياتين، وذكريات تتحدى المنطق، يخوض خالد رحلةً غامضة بحثًا عن الحقيقة، ليكتشف أن العبور إلى حياة أخرى قد يكون أسهل بكثير من العودة إلى حياته الأولى.
-
-
- </h2>
-
- 
-    </div>
-  </div>
-</section>
     <div class="box">
-      <h2 class="section-title"> "غلبني النوم كفريسةٍ أضناها التعب، ثم استيقظتُ على بكاء طفلتي 'ليلى'. نظرتُ إليها فتوقفت أنفاسي؛ ليلى هنا طفلة في مهدها، بينما ليلى هناك عروسٌ متألقة! حملتُها وضممتُها إلى صدري أداعبها لساعتين حتى نامت. نظرتُ إليها وتمتمتُ بشجن: ماذا لو أبحرت سفينتي دون عودة؟ ما أصعب أن تكون آخرُ ما بيننا نظراتٍ تنتزع القلب انتزاعًا.."
+      <p>ماذا لو كانت هناك حياة أخرى تنتظرك في ظلّ شجرة؟</p>
 
- .</h2>
+      <p>
+        لم يكن خالد يعلم أن بذرةً خضراء صغيرة ستقوده إلى عالمٍ موازٍ،
+        حيث يصبح الماضي حاضرًا، وتتخذ الحياة شكلًا لم يكن يومًا من اختياراته.
+      </p>
 
-    
+      <p>
+        بين عالمين، وحياتين، وذكريات تتحدى المنطق، يخوض خالد رحلةً غامضة
+        بحثًا عن الحقيقة، ليكتشف أن العبور إلى حياة أخرى قد يكون أسهل بكثير
+        من العودة إلى حياته الأولى.
+      </p>
     </div>
-  </div>
-</section>
+
     <div class="box">
-      <h2 class="section-title"> "في لُجّة الطريق، التفتتْ إليّ وسن وقالت بنبرة يملؤها الوجل: أنت عارف يا خالد ده معناه إيه؟ معناه إن خالد القديم عمره دلوقتي مئة وثلاثة وثلاثون سنة على الأقل... يعني لا هو، ولا عياله، ولا أهله موجودين في الدنيا دي."
- 
-        .</h2>
+      <p>
+        "غلبني النوم كفريسةٍ أضناها التعب، ثم استيقظتُ على بكاء طفلتي 'ليلى'.
+        نظرتُ إليها فتوقفت أنفاسي؛ ليلى هنا طفلة في مهدها، بينما ليلى هناك
+        عروسٌ متألقة! حملتُها وضممتُها إلى صدري أداعبها لساعتين حتى نامت.
+        نظرتُ إليها وتمتمتُ بشجن: ماذا لو أبحرت سفينتي دون عودة؟ ما أصعب أن
+        تكون آخرُ ما بيننا نظراتٍ تنتزع القلب انتزاعًا.."
+      </p>
+    </div>
+
+    <div class="box">
+      <p>
+        "في لُجّة الطريق، التفتتْ إليّ وسن وقالت بنبرة يملؤها الوجل: أنت عارف
+        يا خالد ده معناه إيه؟ معناه إن خالد القديم عمره دلوقتي مئة وثلاثة
+        وثلاثون سنة على الأقل... يعني لا هو، ولا عياله، ولا أهله موجودين في
+        الدنيا دي."
       </p>
     </div>
   </div>
 </section>
+
 <!-- التواصل -->
 
 <section id="page-contact" class="page">
@@ -1282,10 +1105,7 @@ function switchPage(pageId) {
 
   target.classList.add('active');
 
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 /* إنشاء شريط الشخصيات */
@@ -1316,11 +1136,6 @@ function updateSlider() {
   if (!total) return;
 
   currentSlide = (currentSlide + total) % total;
-
-  /*
-    اتجاه شريط الصور LTR حتى تتحرك الشرائح بصورة صحيحة.
-    نستخدم translateX السالب للانتقال إلى الشريحة التالية.
-  */
 
   track.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
